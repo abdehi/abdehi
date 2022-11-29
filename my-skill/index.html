@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body class="bg-zinc-900">
+    <!-- Navbar section start -->
+
+    <section class="px-20 pt-10">
+      <nav class="shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+          <span class="text-2xl font-inter cursor-pointer text-teal-400">
+            Abdehi
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+
+        <ul
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolut w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="/index.html"
+              class="text-xl text-white hover:text-teal-500 duration-500"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="/my-skill/index.html"
+              class="text-xl text-white hover:text-teal-500 duration-500"
+              >My Skill</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="/about/index.html"
+              class="text-xl text-white hover:text-teal-500 duration-500"
+              >About</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="/contact/index.html"
+              class="text-xl text-white hover:text-teal-500 duration-500"
+              >Contact</a
+            >
+          </li>
+
+          <h2 class=""></h2>
+        </ul>
+      </nav>
+    </section>
+    <!-- Navbar section end -->
+
+    <!-- My skill section start -->
+    <section class="grid grid-cols-2 gap-16">
+      <div class="p-20">
+        <h1 class="text-teal-400 text-6xl font-semibold mb-4">
+          Skill & Experience
+        </h1>
+        <div class="text-white text-justify">
+          it started when I decided to join the campus robotic team about 5
+          years ago. Then, following all the selections given and finally being
+          accepted as a member of the campus robot team as a programmer. At that
+          point, I started to love "coding". Starting with love, it took a long
+          process to take part in the competition, and in the end, I won 1st
+          place
+          <p class="my-5">
+            And at this time I was working in a power generation company for 2
+            years. and at the point where I decided to return to the world of
+            "coding" to switch careers later, to a career in an information
+            technology company.
+          </p>
+          I succeeded in making my first website (personal website), then
+          project cloning websites from various big technology companies.
+          <p class="my-5">
+            let’s check
+            <a href="/home/index.html" class="text-teal-500">my project</a>, for
+            more details or just
+            <a href="/contact/index.html" class="text-teal-500">contact me</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="m-11">
+        <img src="/img/foto-icon.png" alt="" />
+      </div>
+    </section>
+    <!-- My skill section end -->
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
