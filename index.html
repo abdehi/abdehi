@@ -23,17 +23,20 @@
     ></script>
   </head>
 
-  <body class="bg-zinc-900 lg:px-40 md:px-30 sm:px-10 xs:px-2">
+  <body class="bg-zinc-900 lg:px-60 md:px-30 sm:px-10 xs:px-10 px-10">
     <!-- Navbar section start -->
 
-    <section class="px-20 pt-10">
+    <section class="pt-10">
       <nav class="shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
-          <span class="text-2xl font-inter cursor-pointer text-teal-400">
+          <a
+            href="/index.html"
+            class="text-2xl font-inter cursor-pointer bg-gradient-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent"
+          >
             Abdehi
-          </span>
+          </a>
 
-          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
           </span>
         </div>
@@ -53,7 +56,7 @@
             <a
               href="/my-skill/"
               class="text-xl text-white hover:text-teal-500 duration-500"
-              >My skill</a
+              >My Skill</a
             >
           </li>
           <li class="mx-4 my-6 md:my-0">
@@ -78,15 +81,15 @@
     <!-- Navbar section end -->
 
     <!-- hero section start  -->
-    <section class="p-20">
+    <section class="pt-20">
       <div class="">
         <h1
-          class="font-semibold text-white 2xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl"
+          class="font-semibold text-white 2xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl text-6xl"
         >
           Hi,
         </h1>
         <h1
-          class="font-bold text-white mt-1 2xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl"
+          class="font-bold text-white mt-1 2xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-5xl text-5xl"
         >
           I'm
           <span
@@ -95,12 +98,12 @@
           >
         </h1>
         <h1
-          class="font-bold text-white mt-1 2xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl xs:text-xl"
+          class="font-bold text-white mt-1 2xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl xs:text-xl text-3xl"
         >
           Front-end Web Developer
         </h1>
         <p
-          class="font-medium text-gray-400 2xl:text-2xl mt-5 mb-10 lg:text-lg md:text-xs xs:text-xs"
+          class="font-medium text-gray-400 2xl:text-2xl mt-5 mb-10 lg:text-lg md:text-xs xs:text-xs text-xs"
         >
           I work using popular programming languages on the front-end
           <span class="block">
@@ -117,13 +120,13 @@
     <!-- hero section end -->
 
     <!-- My Project section start -->
-    <section id="my-project" class="font-inter px-20">
+    <section id="my-project" class="font-inter">
       <div>
         <h1 class="text-7xl font-bold text-teal-400 mb-8 xs:text-xl">
           My Project
         </h1>
       </div>
-      <div class="grid lg:gap-1 sm:grid-cols-1 lg:grid-cols-3">
+      <div class="grid lg:gap-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
         <div
           id="my-project-1"
           class="border-2 border-gray-400 p-5 rounded-xl m-1"
@@ -204,7 +207,7 @@
     <!-- My Project section end -->
 
     <!-- footer section start -->
-    <footer class="pb-12 px-20">
+    <footer class="pb-12">
       <div class="container">
         <div class="max-w-full pt-10 border-t border-slate-700">
           <p class="text-center text-white pr-4 mb-3">Reach me out</p>

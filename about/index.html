@@ -20,32 +20,33 @@
     ></script>
   </head>
 
-  <body class="bg-zinc-900">
+  <body class="bg-zinc-900 lg:px-60 md:px-30 sm:px-10 xs:px-10 px-10">
     <!-- Navbar section start -->
-
-    <section
-      class="lg:pl-60 lg:pr-48 lg:pt-10 md:pl-60 md:pr-48 md:pt-10 xl:pl-60 xl:pr-48 xl:pt-10 sm:max-w-full sm:px-20 sm:py-10"
-    >
+    <section class="pt-10">
       <nav class="shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
-          <span class="text-2xl font-inter cursor-pointer text-teal-400">
+          <a
+            href="/index.html"
+            class="text-2xl font-inter cursor-pointer bg-gradient-to-r from-teal-500 to-sky-600 bg-clip-text text-transparent"
+          >
             Abdehi
-          </span>
+          </a>
 
-          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <span class="text-3xl text-white cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
           </span>
         </div>
 
         <ul
-          class="md:flex md:items-center z-[-1] md:z-auto md:static absolut w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 2xl:pr-14"
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolut w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
         >
           <li class="mx-4 my-6 md:my-0">
             <a
               href="/"
               class="text-xl text-white hover:text-teal-500 duration-500"
-              >Home</a
             >
+              Home
+            </a>
           </li>
           <li class="mx-4 my-6 md:my-0">
             <a
@@ -68,53 +69,14 @@
               >Contact</a
             >
           </li>
+
+          <h2 class=""></h2>
         </ul>
       </nav>
     </section>
-    <h2 class="mb-16"></h2>
-
-    <!-- Navbar section end -->
 
     <!-- about section start -->
-    <!-- <section class="flex justify-center">
-      <div class="p-20">
-        <h1 class="text-white text-4xl font-semibold mb-2">About</h1>
-        <h1 class="text-teal-400 text-4xl font-semibold mb-4">
-          Abdehi Perdana Ain
-        </h1>
-        <div class="text-white text-justify h-56 w-1/2">
-          I’m a Front-End Developer located in Indonesian. Every day I continue
-          to see the development of the times that are so fast, with information
-          technology that is so very modern. Looking to find out more about
-          "coding", until at one point I decided to switch careers, and a career
-          in technology focused on front-end website development.
-          <p class="my-5">
-            Previously, My educational background is Bachelor of Applied
-            Electrical Engineering. I was a robotics programmer, when I was
-            active in college, I’m a person who obeyed the organization. From
-            obedience and patience in learning, I finally achieved an
-            achievement and was awarded 1st place in Regional II KRSTI
-            (Indonesian Dance Robot Contest) by the Director of Student Affairs,
-            Ministry of Research, Technology and Higher Education.
-          </p>
-          My background in deciding on a career switch and wanting to work as a
-          front-end developer that is : 1. Because I love "coding" since I was
-          in college (active in the campus robot team organization). 2. Want to
-          contribute to solving company problems. 3. Interested in the entire
-          frontend spectrum and working on ambitious projects with positive
-          people. Let’s Make something special
-        </div>
-      </div>
-
-      <div class="w-1/2">
-        <img src="/img/abdehi-foto.png" alt="" />
-      </div>
-    </section> -->
-
-    <section
-      id="about"
-      class="lg:pt-10 lg:pb-32 lg:pl-60 lg:pr-48 md:pl-60 md:pr-48 md:pt-10 sm:px-20 sm:max-w-full md:max-w-full"
-    >
+    <section id="about" class="sm:max-w-full md:max-w-full pt-20">
       <div class="container flex">
         <div class="max-w-full mb-10 text-white flex-1">
           <h1 class="text-white text-4xl font-semibold mb-2">About</h1>
@@ -151,7 +113,7 @@
             </li>
           </ul>
         </div>
-        <div class="hidden lg:block pl-7">
+        <div class="hidden lg:block pl-7 mb-10">
           <img src="/img/abdehi-foto (4).png" alt="" />
         </div>
       </div>
@@ -160,7 +122,7 @@
     <!-- about section end -->
 
     <!-- footer section start -->
-    <footer class="lg:pb-12 lg:px-60 sm:max-w-full md:max-w-full sm:px-20">
+    <footer class="sm:max-w-full md:max-w-full sm:px-20">
       <div class="container">
         <div class="max-w-full pt-10 border-t border-slate-700">
           <p class="text-center text-white pr-4 mb-3">Reach me out</p>
